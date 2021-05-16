@@ -1,0 +1,5 @@
+C:\Users\AbdullahTahir\Downloads\Compressed\TaskManagementAPI-master\TaskManagementAPI-master\TaskManagementAPI\obj\Debug\netcoreapp3.0\TaskManagementAPI.csprojAssemblyReference.cache
+C:\Users\AbdullahTahir\Downloads\Compressed\TaskManagementAPI-master\TaskManagementAPI-master\TaskManagementAPI\obj\Debug\netcoreapp3.0\TaskManagementAPI.AssemblyInfoInputs.cache
+C:\Users\AbdullahTahir\Downloads\Compressed\TaskManagementAPI-master\TaskManagementAPI-master\TaskManagementAPI\obj\Debug\netcoreapp3.0\TaskManagementAPI.AssemblyInfo.cs
+C:\Users\AbdullahTahir\Downloads\Compressed\TaskManagementAPI-master\TaskManagementAPI-master\TaskManagementAPI\obj\Debug\netcoreapp3.0\TaskManagementAPI.csproj.CoreCompileInputs.cache
+C:\Users\AbdullahTahir\Downloads\Compressed\TaskManagementAPI-master\TaskManagementAPI-master\TaskManagementAPI\obj\Debug\netcoreapp3.0\TaskManagementAPI.MvcApplicationPartsAssemblyInfo.cache
