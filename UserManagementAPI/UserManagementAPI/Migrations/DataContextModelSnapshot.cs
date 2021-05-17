@@ -19,19 +19,6 @@ namespace UserManagementAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("TaskManagementAPI.Models.Movie", b =>
-                {
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Movies");
-                });
-
             modelBuilder.Entity("TaskManagementAPI.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -71,8 +58,6 @@ namespace UserManagementAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MovieId");
-
                     b.HasIndex("UserId");
 
                     b.ToTable("UserFavouriteMovies");
@@ -95,12 +80,6 @@ namespace UserManagementAPI.Migrations
 
             modelBuilder.Entity("TaskManagementAPI.Models.UserFavouriteMovie", b =>
                 {
-                    b.HasOne("TaskManagementAPI.Models.Movie", "Movie")
-                        .WithMany()
-                        .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("TaskManagementAPI.Models.User", null)
                         .WithMany("UserFavouriteMovies")
                         .HasForeignKey("UserId")

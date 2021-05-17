@@ -93,8 +93,8 @@ namespace TaskManagementAPI.Data
                     {
                         Id = y.Id,
                         UserId = y.UserId,
-                        MovieId = y.MovieId,
-                        Movie = y.Movie
+                        MovieId = y.MovieId
+                     
                     }).ToList(),
                     Followers = x.Followers.Select(z => new UserFollower
                     {
@@ -124,8 +124,7 @@ namespace TaskManagementAPI.Data
                     {
                         Id = y.Id,
                         UserId = y.UserId,
-                        MovieId = y.MovieId,
-                        Movie = y.Movie
+                        MovieId = y.MovieId
                     }).ToList(),
                     Followers = x.Followers.Select(z => new UserFollower
                     {

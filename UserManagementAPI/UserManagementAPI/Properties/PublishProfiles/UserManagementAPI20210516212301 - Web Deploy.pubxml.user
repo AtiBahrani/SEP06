@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7fMYldR96U6LdJJ7DTdqJAAAAAACAAAAAAAQZgAAAAEAACAAAAB5WRbR5Mg73uGFIm32gGEzNE4X7ktOxdxbuAjNzIrRhAAAAAAOgAAAAAIAACAAAACmHBid5MPLqnU2A4bjwp4KSzYjhNS7ZK4xs4U7iGbOSIAAAABwzo/fokEZw313G2ogo6xA7K1UkyfKRaLqVALLOesZRQ4U1+2GUNP6hDL0cOjePWHVmSp80XuEecjYqd6H12LH3ho3MFojyF9DeqPBWDtYWauOwT0QMtgd8M4fhB7Z78Gn6zwASwvcmO0ShMoUKr83OEdffVS4Hn1ZyMPXillq0EAAAAC552MWrPg6qmIQhk5vnx+YRRXn0LhNmUTnYVCBlLV89bstdB+gTZjhKUjbDgMci9tQ0BasyaAQUMRrhUrIIpH6</EncryptedPassword>
+    <History>True|2021-05-16T20:18:39.9492388Z;True|2021-05-16T22:04:04.3883326+02:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="TaskManagementAPI.Data.DataContext">
+      <Value>Data Source=tcp:usermanagementapidbserver.database.windows.net,1433%3bInitial Catalog=UserManagementAPI_db%3bUser Id=sep06zap%40usermanagementapidbserver%3bPassword=zap%40sep6</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

@@ -14,12 +14,10 @@ namespace TaskManagementAPI.Data
         {
             _dataContext = dataContext;
             Users = new UserRepository(_dataContext);
-            Movies = new MovieRepository(_dataContext);
             UserFavouriteMovies = new UserFavouriteMovieRepository(_dataContext);
             UserFollowers = new UserFollowerRepository(_dataContext);
         }
         public IUserRepository Users { get; private set; }
-        public IMovieRepository Movies { get; private set; }
         public IUserFavouriteMovieRepository UserFavouriteMovies { get; private set; }
         public IUserFollowerRepository UserFollowers { get; private set; }
 

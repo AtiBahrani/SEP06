@@ -8624,11 +8624,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\atbah\\Downloads\\UserManagementAPI (3)\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj",
+      "projectUniqueName": "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj",
       "projectName": "UserManagementAPI",
-      "projectPath": "C:\\Users\\atbah\\Downloads\\UserManagementAPI (3)\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj",
+      "projectPath": "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj",
       "packagesPath": "C:\\Users\\atbah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\atbah\\Downloads\\UserManagementAPI (3)\\UserManagementAPI\\UserManagementAPI\\obj\\",
+      "outputPath": "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserManagementAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\atbah\\AppData\\Roaming\\NuGet\\NuGet.Config",

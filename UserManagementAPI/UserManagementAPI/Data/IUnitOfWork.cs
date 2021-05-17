@@ -9,7 +9,6 @@ namespace TaskManagementAPI.Data
     public interface IUnitOfWork : IDisposable
     {
         IUserRepository Users { get; }
-        IMovieRepository Movies { get; }
         IUserFavouriteMovieRepository UserFavouriteMovies { get; }
         IUserFollowerRepository UserFollowers { get; }
         Task<int> Complete();
