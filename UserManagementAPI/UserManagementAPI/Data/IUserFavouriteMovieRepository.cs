@@ -10,6 +10,6 @@ namespace TaskManagementAPI.Data
     // UserFavouriteMovie repository interface inherationg generic repository interface
     public interface IUserFavouriteMovieRepository : IRepository<UserFavouriteMovie>
     {
-          
+        Task<object> TopFavouriteMoviesForUser(int UserId);
     }
 }

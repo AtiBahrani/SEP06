@@ -50,7 +50,7 @@ namespace TaskManagementAPI.Controllers
             var createdUser = await _unitOfWork.Users.Create(userToCreate, userCreateDto.Password);
             await _unitOfWork.Complete();
 
-            return StatusCode(201);            
+            return Ok(new { userId = createdUser.Id, email = createdUser.Email });
         }
         // end point To login
         [AllowAnonymous]
@@ -92,7 +92,8 @@ namespace TaskManagementAPI.Controllers
 
             return Ok(new
             {
-                token = tokenHandler.WriteToken(tokenDescriptor)
+                token = tokenHandler.WriteToken(tokenDescriptor),
+                userId = userFromRepo.Id
             });
         }
         // end point To get all users

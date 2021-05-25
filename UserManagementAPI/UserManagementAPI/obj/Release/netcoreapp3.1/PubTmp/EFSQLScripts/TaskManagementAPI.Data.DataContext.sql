@@ -9,18 +9,7 @@ END;
 
 GO
 
-IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210514195439_InitialCreate')
-BEGIN
-    CREATE TABLE [Movies] (
-        [Id] int NOT NULL,
-        [Title] nvarchar(max) NULL,
-        CONSTRAINT [PK_Movies] PRIMARY KEY ([Id])
-    );
-END;
-
-GO
-
-IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210514195439_InitialCreate')
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210517100200_InitialCreate')
 BEGIN
     CREATE TABLE [Users] (
         [Id] int NOT NULL IDENTITY,
@@ -34,21 +23,20 @@ END;
 
 GO
 
-IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210514195439_InitialCreate')
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210517100200_InitialCreate')
 BEGIN
     CREATE TABLE [UserFavouriteMovies] (
         [Id] int NOT NULL IDENTITY,
         [MovieId] int NOT NULL,
         [UserId] int NOT NULL,
         CONSTRAINT [PK_UserFavouriteMovies] PRIMARY KEY ([Id]),
-        CONSTRAINT [FK_UserFavouriteMovies_Movies_MovieId] FOREIGN KEY ([MovieId]) REFERENCES [Movies] ([Id]) ON DELETE CASCADE,
         CONSTRAINT [FK_UserFavouriteMovies_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
     );
 END;
 
 GO
 
-IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210514195439_InitialCreate')
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210517100200_InitialCreate')
 BEGIN
     CREATE TABLE [UserFollowers] (
         [FollowersId] int NOT NULL,
@@ -61,31 +49,24 @@ END;
 
 GO
 
-IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210514195439_InitialCreate')
-BEGIN
-    CREATE INDEX [IX_UserFavouriteMovies_MovieId] ON [UserFavouriteMovies] ([MovieId]);
-END;
-
-GO
-
-IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210514195439_InitialCreate')
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210517100200_InitialCreate')
 BEGIN
     CREATE INDEX [IX_UserFavouriteMovies_UserId] ON [UserFavouriteMovies] ([UserId]);
 END;
 
 GO
 
-IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210514195439_InitialCreate')
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210517100200_InitialCreate')
 BEGIN
     CREATE INDEX [IX_UserFollowers_FollowedToId] ON [UserFollowers] ([FollowedToId]);
 END;
 
 GO
 
-IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210514195439_InitialCreate')
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20210517100200_InitialCreate')
 BEGIN
     INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
-    VALUES (N'20210514195439_InitialCreate', N'3.1.3');
+    VALUES (N'20210517100200_InitialCreate', N'3.1.3');
 END;
 
 GO

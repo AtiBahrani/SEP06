@@ -57,5 +57,12 @@ namespace TaskManagementAPI.Controllers
             }
             return Ok("Not Found");
         }
+
+        [HttpGet("TopFavouriteMoviesForUser")]
+        public async Task<IActionResult> TopFavouriteMoviesForUser(int UserId)
+        {
+            var data = await _unitOfWork.UserFavouriteMovies.TopFavouriteMoviesForUser(UserId);
+            return Ok(data);
+        }
     }
 }

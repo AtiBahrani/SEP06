@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserMAnagementAPI\\UserManagementAPI.csproj": {}
+    "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserMAnagementAPI\\UserManagementAPI.csproj": {
+    "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserMAnagementAPI\\UserManagementAPI.csproj",
+        "projectUniqueName": "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj",
         "projectName": "UserManagementAPI",
-        "projectPath": "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserMAnagementAPI\\UserManagementAPI.csproj",
+        "projectPath": "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj",
         "packagesPath": "C:\\Users\\atbah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserMAnagementAPI\\obj\\",
+        "outputPath": "C:\\Users\\atbah\\OneDrive - ViaUC\\Dokumenter\\GitHub\\SEP06\\UserManagementAPI\\UserManagementAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\atbah\\AppData\\Roaming\\NuGet\\NuGet.Config",
