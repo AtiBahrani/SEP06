@@ -109,6 +109,12 @@ namespace TaskManagementAPI.Controllers
             return await _unitOfWork.Users.UserSingleWithAll(id);
         }
 
+        [HttpGet("SearchUsers")]
+        public async Task<IEnumerable<User>> SearchUsers(string searchTerm = "", int pageIndex = 1, int pageSize = 10)
+        {
+            return await _unitOfWork.Users.SearchUsers(searchTerm, pageIndex, pageSize);
+        }
+
         //[HttpPost("Update")]
         //public async Task<IActionResult> UpdateUser(User user)
         //{

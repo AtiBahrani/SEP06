@@ -139,5 +139,20 @@ namespace TaskManagementAPI.Data
                 }).FirstOrDefaultAsync(m=>m.Id == Id);
             return user;
         }
+
+        public async Task<List<User>> SearchUsers(string searchTerm, int pageIndex, int pageSize)
+        {
+            searchTerm = searchTerm.ToLower();
+            var usersList = await _dataContext.Users.Where(m => m.UserName.ToLower().Contains(searchTerm))
+               .Select(x => new User
+               {
+                   Email = x.Email,
+                   Id = x.Id,
+                  // PasswordHash = x.PasswordHash,
+                  // PasswordSalt = x.PasswordSalt,
+                   UserName = x.UserName,
+               }).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync();
+            return usersList;
+        }
     }
 }

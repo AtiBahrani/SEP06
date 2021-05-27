@@ -16,5 +16,7 @@ namespace TaskManagementAPI.Data
         Task<bool> IsUserExist(string username);
         Task<List<User>> UsersListWithAll(int pageIndex, int pageSize);
         Task<User> UserSingleWithAll(int Id);
+        Task<List<User>> SearchUsers(string searchTerm, int pageIndex, int pageSize);
+
     }
 }
