@@ -34,7 +34,7 @@ namespace TaskManagementAPI
             services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
             services.AddCors();
-            services.AddScoped<IUnitOfWork, UnitOfWork>(); // dependanct injection
+            services.AddScoped<IUnitOfWork, UnitOfWork>(); // dependancy injection
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
             {

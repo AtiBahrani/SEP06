@@ -7,10 +7,10 @@ using TaskManagementAPI.Models;
 
 namespace TaskManagementAPI.Data
 {
-    // User repository interface inherationg generic repository interface
+    // User repository interface inherating generic repository interface
     public interface IUserRepository : IRepository<User>
     {
-        // extra methods just for user repository which can not handeled in generic repository
+        // extra methods just for user repository which can not be handeled in generic repository
         Task<User> Create(User user, string password);
         Task<User> Login(string email, string password);
         Task<bool> IsUserExist(string username);

@@ -19,7 +19,7 @@ using TaskManagementAPI.Models;
 namespace TaskManagementAPI.Controllers
 {
     [Route("api/[controller]")]
-    //[Authorize]
+    [Authorize]
     [ApiController]
     public class FavouriteMovieController : ControllerBase
     {      
